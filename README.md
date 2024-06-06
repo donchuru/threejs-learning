@@ -27,7 +27,7 @@ const y = position[1];
 const z = position[2];
 `
 
-New code:
+New code: \
 `
 const [, y, z] = position;
 `
@@ -43,7 +43,7 @@ function log(className, ...args) {
  }
 `
 
-### The speread operator `...`
+### The spread operator `...`
 Can be used to expand an iterable into arguments \
 `
 const position = [1, 2, 3];

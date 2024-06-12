@@ -9,10 +9,10 @@ WebGL is a very low-level system that only draws points, lines and triangles.
 Assume an object `const dims = {width: 300, height: 150}` 
 
 Old code: \
-`
+```
 const width = dims.width;
 const height = dims.height;
-`
+```
 
 New code: \
 `
@@ -22,10 +22,10 @@ const {width, height} = dims;
 Destructuring works with arrays too. Assume an array const position = [5, 6, 7, 1];
 
 Old code: \
-`
+```
 const y = position[1];
 const z = position[2];
-`
+```
 
 New code: \
 `
@@ -34,35 +34,35 @@ const [, y, z] = position;
 
 ### The rest parameter
 The rest parameter can be used to consume any number of parameters. Example: \
-`
+```
 function log(className, ...args) {
    const elem = document.createElement('div');
    elem.className = className;
    elem.textContent = args.join(' ');
    document.body.appendChild(elem);
  }
-`
+```
 
 ### The spread operator `...`
 Can be used to expand an iterable into arguments \
-`
+```
 const position = [1, 2, 3];
 someMesh.position.set(...position);
-`
+```
 
 or copy an array \
-`
+```
 const copiedPositionArray = [...position];
 copiedPositionArray.push(4); // [1,2,3,4]
 console.log(position); // [1,2,3] position is unaffected
-`
+```
 
 or to merge objects \
-`
+```
 const a = {abc: 123};
 const b = {def: 456};
 const c = {...a, ...b};  // c is now {abc: 123, def: 456}
-`
+```
 
 ### Arrow functions
 `
@@ -112,5 +112,5 @@ The final code in /threejs-code has this structure:
 
 
 ## More Notes
-**gLTF** stands for Graphics Library Transmission Format
+**gLTF** stands for Graphics Library Transmission Format \
 A glTF file uses one of two possible file extensions: .gltf (JSON/ASCII) or .glb (binary).

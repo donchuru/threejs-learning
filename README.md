@@ -98,6 +98,10 @@ Basically, a mesh represents the combination of 3 things:
 **Texture** objects generally represent images either loaded form image files, generated from a canvas or rendered from another source.
 
 **Light** objects represent different kinds of lights
+Some of these include:
+- Ambient light: Light from the environment. Indirect result of other sources of light e.g. daylight in your room
+- Directional light: A light that gets emitted in a specific direction. This light will behave as though it is infinitely far away. The rays produced from it are all parallel. e.g. sunlight
+- Spotlight: emits light in the form of a cone
 
 
 ![alt text](image-1.png)
@@ -108,5 +112,5 @@ The final code in /threejs-code has this structure:
 
 
 ## More Notes
-**gLTF** stands for Graphics Library Transmission format
+**gLTF** stands for Graphics Library Transmission Format
 A glTF file uses one of two possible file extensions: .gltf (JSON/ASCII) or .glb (binary).

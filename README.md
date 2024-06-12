@@ -105,3 +105,8 @@ Basically, a mesh represents the combination of 3 things:
 
 The final code in /threejs-code has this structure:
 ![alt text](image-2.png)
+
+
+## More Notes
+**gLTF** stands for Graphics Library Transmission format
+A glTF file uses one of two possible file extensions: .gltf (JSON/ASCII) or .glb (binary).

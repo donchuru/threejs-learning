@@ -111,6 +111,11 @@ The final code in /threejs-code has this structure:
 ![alt text](image-2.png)
 
 
-## More Notes
 **gLTF** stands for Graphics Library Transmission Format \
 A glTF file uses one of two possible file extensions: .gltf (JSON/ASCII) or .glb (binary).
+
+
+# Responsive Design
+**HD-DPI** stands for high-density dot per inch displays. That's most Macs nowadays and many Windows machines as well as pretty much all smartphones.\
+The way this works in the browser is they use CSS pixels to set the sizes which are supposed to be the same regardless of how high res the display is. The browser will just render text with more detail but the same physical size.
+
